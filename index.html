@@ -18,6 +18,7 @@
         <meta charset="utf-8" />
         <meta name="google-site-verification" content="Myh35QddfEArh0686LcO2zMjrgv0C7L4FCBU0k0oZvU" />
         <meta name='referrer' content='origin' />
+        <meta name='version' content='1.0' />
         <script type="text/javascript">
             var redirectTimeOut,
                 lang;
@@ -72,7 +73,7 @@
                 if (lang) {
                     redirect();
                 } else {
-                    var ws = new WebSocket('wss://frontend.binaryws.com/websockets/v3?app_id=1&brand=binary');
+                    var ws = new WebSocket('wss://frontend.derivws.com/websockets/v3?app_id=1&brand=binary');
                     ws.onopen = function(e) {
                         ws.send(JSON.stringify({'website_status': '1'}));
                     };
